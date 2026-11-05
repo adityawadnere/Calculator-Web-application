@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101827, #243b55);
+    color: white;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 360px;
+    padding: 25px;
+    border-radius: 25px;
+    background: rgba(20, 30, 48, 0.95);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+header p {
+    color: #9caec5;
+    font-size: 14px;
+}
+
+.display {
+    min-height: 110px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background: #0b1220;
+    text-align: right;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+}
+
+#expression {
+    min-height: 30px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #8fa6c2;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    background: #263449;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #3b506b;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.special {
+    background: #52657d;
+}
+
+.operator {
+    background: #f59e0b;
+    color: #111827;
+    font-weight: bold;
+}
+
+.operator:hover {
+    background: #fbbf24;
+}
+
+.equal {
+    background: #10b981;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.equal:hover {
+    background: #059669;
+}
+
+footer {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #9caec5;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        padding: 18px;
+    }
+
+    button {
+        height: 55px;
+        font-size: 18px;
+    }
+}
